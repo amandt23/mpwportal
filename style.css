@@ -8,7 +8,7 @@ body {
     background-color: #EFEFEF;
 }
 
-.home{
+.home {
     display: flex;
 }
 
@@ -240,21 +240,100 @@ body {
     row-gap: 28px;
 }
 
+/* place order section  */
+
+.place-order {
+    width: 100%;
+    margin: 24px 30px;
+}
+
+.placeOrderNav {
+    text-align: center;
+}
+
+.placeOrderNav h1 {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.placeOrderNav ul li {
+    list-style: none;
+    display: flex;
+    column-gap: 10px;
+}
+
+.placeOrderNav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.placeOrderNav ul li {
+    display: flex;
+}
+
+.cardlefr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 453px;
+    background-color: white;
+    padding: 21px 42px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.cardlefr input {}
+
+.placeOrderCards {
+    margin-top: 18px;
+}
+
+.cardLeftInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #BFBFBF;
+    padding: 10px 21px;
+    background-color: white;
+    width: 335px;
+
+}
+
+.cardLeftInput svg {
+    margin-top: -10px;
+}
+
+.cardLeftInput input {
+    border: none;
+    outline: none;
+}
 
 
-/* @media(max-width: 1000px){
-    .home-navbar {
-        padding: 0px 5px;
-        margin: 0px;
-    }
-    
-} */
+.calulation {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
 
-/* @media(max-width: 1000px){
-    .SideBar-Toggle{
-        display: block;
-    }
-    .sidebar{
-        display: none;
-    }
-} */
+.calculate-left {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.calculate-left input {
+    width: 53px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dropdown button style */

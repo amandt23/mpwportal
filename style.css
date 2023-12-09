@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+.home{
+    display: flex;
+}
+
+/* sidebar css  */
+.sidebar {
+    /* background-color: aqua; */
+    width: 268px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.SideBar-Toggle {
+    display: none;
+    font-size: 20px;
+}
+
+.logo {
+    max-width: 191px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+    margin: 11px 0px;
+
+}
+
+.sidebarBottom {
+    background: white;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.orderBtn {
+    border-radius: 8px;
+    background: #52A81B;
+    padding: 7px 20px;
+    /* width: 200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 8px;
+    margin: 11px 27px;
+}
+
+.orderBtn button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sidebarBottom hr {
+    width: 100%;
+
+}
+
+.sidebar-nav {
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 13px 0px;
+    column-gap: 9px;
+}
+
+/* main section  */
+.home-navbar {
+    padding-top: 16px;
+    width: 100%;
+    margin: 0px 46px;
+}
+
+.navTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28px;
+
+}
+
+.new-orderBtn {
+    border-radius: 8px;
+    background: #52A81B;
+    padding: 5px;
+    /* width: 214px; */
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+}
+
+.new-orderBtn button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.navTop p {
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28px;
+}
+
+.menuLeft ul {
+    display: flex;
+    column-gap: 58px;
+
+}
+
+.menuLeft ul li {
+    list-style: none;
+
+}
+
+.menuLeft ul li {
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.menuLeft ul li span {
+    position: absolute;
+    top: -13px;
+    border: 1px solid black;
+    border-radius: 50%;
+    /* padding: 5px; */
+    font-size: 12px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -10px;
+
+}
+
+.menuRight .search input {
+    border: none;
+    outline: none;
+}
+
+.menuRight .search {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background: #FEFEFE;
+    padding: 7px 15px;
+    column-gap: 10px;
+}
+
+.home-navbar hr {
+    margin-top: 10px;
+}
+
+.notice {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 9px 46px;
+    border-radius: 5px;
+    background: #FFF;
+
+}
+
+.notice p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+}
+
+.PlaceOrder {
+    width: 100%;
+    height: 366px;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 35px;
+}
+
+.placeOrderBtns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+
+
+/* @media(max-width: 1000px){
+    .home-navbar {
+        padding: 0px 5px;
+        margin: 0px;
+    }
+    
+} */
+
+/* @media(max-width: 1000px){
+    .SideBar-Toggle{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+} */

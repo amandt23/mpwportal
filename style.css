@@ -7,6 +7,14 @@
 body {
     background-color: #EFEFEF;
 }
+a{
+    text-decoration: none;
+}
+
+button,
+svg:hover {
+    cursor: pointer;
+}
 
 .home {
     display: flex;
@@ -14,11 +22,14 @@ body {
 
 /* sidebar css  */
 .sidebar {
-    /* background-color: aqua; */
+    background:white;
+   
     width: 268px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    /* height: 100vh; */
     height: 100vh;
 }
 
@@ -38,12 +49,10 @@ body {
 
 .sidebarBottom {
     background: white;
-
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
 }
 
 .orderBtn {
@@ -57,6 +66,15 @@ body {
     flex-direction: row;
     column-gap: 8px;
     margin: 11px 27px;
+}
+
+.orderBtn:hover {
+    cursor: pointer;
+    background-color: rgb(20, 113, 20);
+}
+.BTN:hover {
+    cursor: pointer;
+    background-color: rgb(20, 113, 20);
 }
 
 .orderBtn button {
@@ -74,6 +92,11 @@ body {
     width: 100%;
 
 }
+.sidebarFooter hr {
+    width: 100%;
+    margin-bottom: -50px;
+
+}
 
 .sidebar-nav {
     /* background-color: aquamarine; */
@@ -82,12 +105,67 @@ body {
     align-items: center;
     flex-direction: column;
 }
+ /* profile dropdown ccc  */
+ .userProfile{
+    position: relative;
+ }
+ .profileDropDown{
+    position: absolute;
+    background-color: gray;
+    top: 140px;
+    left: 211px;
+    padding: 20px;
+
+ }
+.profileDropDown ul li{
+    list-style: none;
+    
+}
+.profileDropDown ul li a{
+    color: white;
+
+}
+.profileDropDown ul li:hover{
+    cursor: pointer;
+}
+.profileDropDown ul{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 .sidebar-nav ul li {
     display: flex;
     align-items: center;
     padding: 13px 0px;
     column-gap: 9px;
+}
+
+.sidebar-nav ul li:hover {
+    cursor: pointer;
+}
+
+.sidebarNote{
+    background-color: rgb(197, 235, 197);
+    color: black;
+    padding: 5px;
+    text-align: center;
+    max-width: 180px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.sidebarNote h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebarNote p{
+    font-size: 16px;
+}
+.sidebarNote span{
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 /* main section  */
@@ -152,6 +230,7 @@ body {
 
 .menuLeft ul li {
     list-style: none;
+    cursor: pointer;
 
 }
 
@@ -162,6 +241,13 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Add this style for the active menu item */
+.menuLeft ul li.active {
+    text-decoration: underline;
+    text-underline-offset: 21px;
+    text-decoration-color: green;
 }
 
 .menuLeft ul li span {
@@ -232,7 +318,18 @@ body {
     justify-content: flex-end;
     padding-bottom: 35px;
 }
-
+.midSect{
+    width: 100%;
+    height: 366px;
+    border-radius: 5px;
+    background: #FFF;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 35px;
+}
 .placeOrderBtns {
     display: flex;
     align-items: center;
@@ -288,11 +385,104 @@ body {
     background: #FFF;
 }
 
-.cardlefr input {}
+.hidden {
+    display: none;
+}
+
+/* draft component  */
+.cardleftDraft {
+    padding: 10 0px;
+    justify-content: flex-start;
+}
+
+.cardleftDraft p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.draftInput {
+    border-radius: 5px;
+    border: 1px solid #BFBFBF;
+    outline: none;
+    padding: 10px 21px;
+    max-width: 335px;
+}
+
+#myTextArea {
+    max-width: 335px;
+    font-size: 13px;
+    padding: 10px;
+    outline: none;
+
+}
+
+.draftCardBottom {
+    display: flex;
+}
+
+.draftCard {
+    border-radius: 5px;
+    background: #F6F6F6;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.draftCard h1 {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.draftCard p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.draftCard h2 {
+    color: #000;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 
 .placeOrderCards {
     margin-top: 18px;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
 }
+
+.orderDetails {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+
+
+}
+
 
 .cardLeftInput {
     display: flex;
@@ -329,11 +519,120 @@ body {
 }
 
 .calculate-left input {
-    width: 53px;
+    width: 33px;
     height: 26px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+
+}
+
+.cardLeftInput {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.card-info {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 335px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 1px solid #BFBFBF;
+}
+
+.nextBtn button {
+    border-radius: 8px;
+    padding: 7px 19px;
+    background: #52A81B;
+    color: white;
+    border: none;
+    outline: none;
+    float: right;
+    font-size: 16px;
+}
+
+.card-info p {
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cardRight {
+    max-width: 343px;
+    max-height: 280px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 21px 31px;
+}
+
+.cardRightTop {
+    display: flex;
+    column-gap: 7px;
     align-items: center;
 }
 
-/* Dropdown button style */
+.cardRightTop hr {
+    width: 64px;
+    height: 1px;
+}
+
+.cardRightMid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardRightMid ul li {
+    list-style: none;
+
+}
+
+.cardRightMidContent ul li {
+    margin-top: 10px;
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.cardRightBottom {
+    margin-top: 20px;
+}
+
+.cardRightBotFot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cardRightBotFot p {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

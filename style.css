@@ -109,20 +109,41 @@ svg:hover {
  .userProfile{
     position: relative;
  }
+ #userProfile{
+    width: 150%;
+ }
+ 
+ /* #userProfile:hover .profileDropDown{
+    display: block;
+ } */
  .profileDropDown{
+    display: none;
+    /* display: flex; */
     position: absolute;
-    background-color: gray;
-    top: 140px;
+    background-color: white;
+    top: 130px;
     left: 211px;
-    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 120px;
+    justify-content: center;
+
 
  }
 .profileDropDown ul li{
     list-style: none;
+    width: 100%;
+    text-align: center;
     
 }
-.profileDropDown ul li a{
+/* .profileDropDown ul li:hover{
+    background-color: rgb(172, 170, 170);
     color: white;
+} */
+.profileDropDown ul li a{
+    color: black;
+    /* padding: 1px 10px; */
+    width: 100%;
 
 }
 .profileDropDown ul li:hover{

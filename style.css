@@ -7,7 +7,8 @@
 body {
     background-color: #EFEFEF;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -18,12 +19,15 @@ svg:hover {
 
 .home {
     display: flex;
+    column-gap: 30px;
+
 }
 
 /* sidebar css  */
 .sidebar {
-    background:white;
-   
+    position: sticky;
+    top: 0px;
+    background: white;
     width: 268px;
     display: flex;
     flex-direction: column;
@@ -72,6 +76,7 @@ svg:hover {
     cursor: pointer;
     background-color: rgb(20, 113, 20);
 }
+
 .BTN:hover {
     cursor: pointer;
     background-color: rgb(20, 113, 20);
@@ -92,6 +97,7 @@ svg:hover {
     width: 100%;
 
 }
+
 .sidebarFooter hr {
     width: 100%;
     margin-bottom: -50px;
@@ -105,18 +111,22 @@ svg:hover {
     align-items: center;
     flex-direction: column;
 }
- /* profile dropdown ccc  */
- .userProfile{
+
+/* profile dropdown ccc  */
+.userProfile {
     position: relative;
- }
- #userProfile{
+}
+
+#userProfile {
     width: 150%;
- }
- 
- /* #userProfile:hover .profileDropDown{
+}
+
+#userProfile:hover .profileDropDown {
     display: block;
- } */
- .profileDropDown{
+    z-index: 1;
+}
+
+.profileDropDown {
     display: none;
     /* display: flex; */
     position: absolute;
@@ -129,27 +139,31 @@ svg:hover {
     justify-content: center;
 
 
- }
-.profileDropDown ul li{
+}
+
+.profileDropDown ul li {
     list-style: none;
     width: 100%;
     text-align: center;
-    
+
 }
+
 /* .profileDropDown ul li:hover{
     background-color: rgb(172, 170, 170);
     color: white;
 } */
-.profileDropDown ul li a{
+.profileDropDown ul li a {
     color: black;
     /* padding: 1px 10px; */
     width: 100%;
 
 }
-.profileDropDown ul li:hover{
+
+.profileDropDown ul li:hover {
     cursor: pointer;
 }
-.profileDropDown ul{
+
+.profileDropDown ul {
     display: flex;
     flex-direction: column;
 }
@@ -168,7 +182,7 @@ svg:hover {
     cursor: pointer;
 }
 
-.sidebarNote{
+.sidebarNote {
     background-color: rgb(197, 235, 197);
     color: black;
     padding: 5px;
@@ -177,14 +191,17 @@ svg:hover {
     margin-top: 60px;
     margin-bottom: 20px;
 }
-.sidebarNote h1{
+
+.sidebarNote h1 {
     font-size: 16px;
     font-weight: 600;
 }
-.sidebarNote p{
+
+.sidebarNote p {
     font-size: 16px;
 }
-.sidebarNote span{
+
+.sidebarNote span {
     font-size: 12px;
     text-decoration: underline;
 }
@@ -339,7 +356,8 @@ svg:hover {
     justify-content: flex-end;
     padding-bottom: 35px;
 }
-.midSect{
+
+.midSect {
     width: 100%;
     height: 366px;
     border-radius: 5px;
@@ -351,6 +369,7 @@ svg:hover {
     justify-content: flex-end;
     padding-bottom: 35px;
 }
+
 .placeOrderBtns {
     display: flex;
     align-items: center;
@@ -361,17 +380,20 @@ svg:hover {
 /* place order section  */
 
 .place-order {
-    width: 100%;
-    margin: 24px 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    column-gap: 60px;
 }
 
 .placeOrderNav {
     text-align: center;
+
 }
 
 .placeOrderNav h1 {
     color: #000;
-    font-size: 20px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -392,6 +414,14 @@ svg:hover {
 
 .placeOrderNav ul li {
     display: flex;
+}
+
+.placeorderComponents {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 90px;
+    max-width: 1300px;
+    flex-wrap: wrap;
 }
 
 .cardlefr {
@@ -442,6 +472,7 @@ svg:hover {
 
 .draftCardBottom {
     display: flex;
+    column-gap: 5px;
 }
 
 .draftCard {
@@ -454,6 +485,19 @@ svg:hover {
     align-items: center;
     text-align: center;
     row-gap: 10px;
+    max-width: 165px;
+    margin-bottom: 20px;
+
+    /* column-gap: 5px; */
+}
+
+.draftCard button {
+    border-radius: 3px;
+    background: #52A81B;
+    border: none;
+    padding: 3px 16px;
+    margin-bottom: -20px;
+    color: white;
 }
 
 .draftCard h1 {
@@ -469,7 +513,7 @@ svg:hover {
 
 .draftCard p {
     color: #000;
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -487,12 +531,21 @@ svg:hover {
 
 .placeOrderCards {
     margin-top: 18px;
-    display: none;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 10px;
+    column-gap: 90px;
 
 }
+
+#selectDropdown {
+    border-radius: 5px;
+    border: 1px solid #BFBFBF;
+    /* padding: 7px 44px; */
+    padding: 10px 30px 10px 10px;
+}
+
 
 .orderDetails {
     margin-top: 18px;
@@ -500,7 +553,8 @@ svg:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 10px;
-
+    height: 500px;
+    column-gap: 90px;
 
 }
 
@@ -585,7 +639,7 @@ svg:hover {
 
 .nextBtn button {
     border-radius: 8px;
-    padding: 7px 19px;
+    padding: 7px 20px;
     background: #52A81B;
     color: white;
     border: none;
@@ -594,9 +648,14 @@ svg:hover {
     font-size: 16px;
 }
 
+.nextPrevious {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card-info p {
     color: #000;
-    font-size: 10px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -604,7 +663,7 @@ svg:hover {
 
 .cardRight {
     max-width: 343px;
-    max-height: 280px;
+    height: fit-content;
     border-radius: 8px;
     background: #FFF;
     padding: 21px 31px;
@@ -648,6 +707,7 @@ svg:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .cardRightBotFot p {
@@ -656,4 +716,363 @@ svg:hover {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+
+/* review cards  */
+.reviewOrder {
+    /* margin-top: 28px; */
+    border-radius: 10px;
+    width: 453px;
+    padding: 10px 46px;
+    background-color: white;
+
+
+}
+
+.reviewOrderTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewOrderTop span {
+    font-weight: 600;
+}
+
+.reviewOrderTitle p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.reviewOrderMidDec {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 8px;
+}
+
+.reviewOrderMidOne h1 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.reviewOrderMidOne {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.reviewOrderMidOne p {
+    border-radius: 3px;
+    border: 1px solid #BFBFBF;
+    padding: 3px 35px;
+    font-size: 15px;
+    width: 208px;
+
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 12px 0px;
+}
+
+.instructions p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footerBTNs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.footerBTNs button {
+    border-radius: 8px;
+    background: #52A81B;
+    border: none;
+    padding: 7px 20px;
+    color: white;
+}
+
+.reviewOrderSection {
+    display: flex;
+    column-gap: 90px;
+    margin-top: 18px;
+}
+
+.apply {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.apply input {
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+
+
+}
+
+#search input {
+    padding: 3px 7px;
+}
+
+.apply button {
+    border-radius: 2px;
+    background: #52A81B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: white;
+    padding: 4px 8px;
+}
+
+#totalPay {
+    margin-top: 25px;
+}
+
+.cardRightBotFot p:last-child {
+    padding-right: 65px;
+}
+
+.checkoutBTN {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#checkoutBTN {
+    border-radius: 10px;
+    background: #52A81B;
+    padding: 10px 25px;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.secureBy {
+    display: flex;
+    margin-top: 13px;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.secureBy hr {
+    width: 64px;
+    height: 1px;
+    background: #BFBFBF;
+}
+
+.secureBy p {
+    font-weight: 600;
+}
+
+.payCards {
+    border-radius: 7.142px;
+    background: #EEFFE3;
+    padding: 10px 5px;
+    margin-top: 12px;
+}
+
+.orderCompCard {
+    /* background-color: red; */
+    width: 453px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 15px 40px;
+    row-gap: 10px;
+}
+
+.completeOrder {
+    margin-top: 30px;
+}
+
+.completeOrder p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.orderCompCard h1 {
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.orderCompCardDetail {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+
+}
+
+.orderCompCardDetail ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.orderCompCardDetail ul li {
+    list-style: none;
+}
+
+.orderOnesect {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderOnesect p {
+    font-size: 16px;
+}
+
+.orderCompCard h1 {
+    margin-top: 10px;
+}
+
+.orderMid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderMid ul li {
+    list-style: none;
+}
+
+.orderMid ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.fileStatus {
+    margin-top: 10px;
+}
+
+.file {
+    display: flex;
+    justify-content: space-between;
+}
+
+.file ul li {
+    list-style: none;
+
+}
+
+.file ul {
+    display: flex;
+    row-gap: 10px;
+}
+
+.orderInstruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.completedOrderContents {
+    display: flex;
+    column-gap: 90px;
+    margin-top: 30px;
+}
+
+.paymentOption {
+    border: 1px solid black;
+    padding: 20px 30px;
+    height: fit-content;
+}
+
+
+/* congratulation page css  */
+.congratPage {
+    /* background-color: red; */
+    background-image: url(./assets//images/congrats.png);
+    background-size: cover;
+
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.congratulation {
+    border-radius: 2px;
+    background: #FFF;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.20);
+    padding: 20px 118px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    row-gap: 10px;
+    color: #52A81B;
+}
+
+.congratulation hr {
+    width: 269.002px;
+    height: 1px;
+}
+
+.congratulation h1 {
+    font-size: 25px;
+}
+
+.congratulation h2 {
+    font-size: 16px;
+}
+
+.congratMid {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width: 100%;
+    /* row-gap: 10px; */
+}
+
+.congratMid ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.congratMid ul li {
+    list-style: none;
+}
+
+.congratulation button {
+    border-radius: 3px;
+    background: #52A81B;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    margin: 20px 0px;
 }

@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="orderProgres.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="profile.css">
     <title>Document</title>
 </head>
 
@@ -129,249 +124,57 @@
 
         </div>
 
-        <div class="progressOrderContainer">
-            <h1>Order Details</h1>
-            <div class="progresOrderCOntents">
+        <div class="homeContainer">
+            <h1>Settings</h1>
 
-                <div class="orderCompCard">
-                    <h1>Order Details</h1>
-                    <hr>
-                    <div class="orderCompCardDetail">
-                        <div class="orderOne">
-                            <ul>
-                                <li>Email</li>
-                                <li>Order ID</li>
-                                <li>Posted On</li>
-                                <li>Title</li>
-                                <li>Education Level</li>
-                                <li>Document Type</li>
-                                <li>No Of Pages</li>
-                                <li>Course</li>
-                                <li>Source</li>
-                                <li>Citation</li>
-                            </ul>
-                        </div>
-                        <div class="orderOne">
-                            <ul>
-                                <li>Wick@gmail.com</li>
-                                <li>MPW-20</li>
-                                <li>23/12/2023</li>
-                                <li>Testing Document</li>
-                                <li>testing</li>
-                                <li>High School</li>
-                                <li>Reflection Paper</li>
-                                <li>1</li>
-                                <li>Chemistry</li>
-                                <li>2</li>
-                                <li>APA</li>
+            <div class="myProfileCard">
+                <div class="profileLeft">
+                    <div class="profileTOp">
 
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                    <h1>Deadlines Details</h1>
-                    <div class="orderMid">
-                        <ul>
-                            <li>Deadline Date & Time</li>
-                            <li>Timezone</li>
-                        </ul>
-                        <ul>
-                            <li>23/12/2023- 12:45 PM</li>
-                            <li>Mountain Time</li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="fileStatus">
-                        <h1>File and Status</h1>
-                        <div class="file">
-                            <ul>
-                                <li>File:</li>
-                            </ul>
-                            <ul>
-                                <li>Status:</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="orderInstruction">
-                        <h1>INSTRUCTIONS</h1>
-                        <textarea name="text" id="" cols="30" rows="5"></textarea>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none">
+                            <path
+                                d="M35 0C15.7012 0 0 15.7012 0 35C0 54.2988 15.7012 70 35 70C54.2988 70 70 54.2988 70 35C70 15.7012 54.2988 0 35 0ZM26.5495 19.6572C28.6815 17.3974 31.6817 16.1538 35 16.1538C38.3183 16.1538 41.2916 17.4058 43.432 19.6774C45.601 21.9793 46.656 25.0721 46.407 28.3971C45.9089 35 40.7935 40.3846 35 40.3846C29.2065 40.3846 24.081 35 23.593 28.3954C23.3457 25.0435 24.399 21.9406 26.5495 19.6572ZM35 64.6154C31.0465 64.618 27.1326 63.8267 23.4907 62.2884C19.8487 60.7501 16.5526 58.4961 13.7981 55.6601C15.3757 53.4103 17.3858 51.4974 19.7111 50.0332C24.0002 47.2837 29.4286 45.7692 35 45.7692C40.5714 45.7692 45.9998 47.2837 50.2839 50.0332C52.611 51.4967 54.623 53.4097 56.2019 55.6601C53.4476 58.4964 50.1516 60.7506 46.5096 62.2889C42.8675 63.8272 38.9536 64.6184 35 64.6154Z"
+                                fill="white" />
+                        </svg>
+                        <h2>John wick</h2>
                     </div>
 
+                    <hr color="black">
 
+                    <div class="profileBottom">
+                        <h2>My Profile</h2>
+                        <h2>Settings</h2>
+                        <h2>Log out</h2>
+                    </div>
                 </div>
 
-                <div class="progressORderRight">
+                <div  class="profileRight">
+                    <h2>Edit Profile</h2>
+                   <div class="profileInputs">
+                        <label for="name">Full Name</label>
+                        <input type="text">
+                        <label for="name">Email</label>
+                        <input type="text">
+                        <label for="name">Phone</label>
+                        <input type="text">
+                        <label for="name">Country</label>
+                        <input type="text">
+                        <label for="name">Change Password</label>
+                        <input type="text">
+                        <label for="name">Password Confirm</label>
+                        <input type="text">
 
-                    <div style="position: sticky; top: 105px;" class="orderProgressCard">
-
-                        <div id="orderproSect" class="changingContent">
-                            <button id="discussBtn">Discuss Any Concerns</button>
-                            <div class="orderMessage">
-                                <p>Your Order is in Progress</p>
-                            </div>
+                        <div class="settingBtns">
+                            <button>Save</button>
+                            <button>Cancel</button>
                         </div>
-
-                        <div id="congratSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2>Congratulations!</h2>
-                                <p>Your Order Has Been Completed</p>
-                                <button id="AcceptOrderBtn" class="progressBtn">Accept Order</button>
-                            </div>
-                        </div>
-
-                        <div id="writerSect" class="changingContent">
-                            <div style="margin-bottom: 50px; padding-bottom: 30px;" class="orderMessage">
-                                <h2>Congratulations!</h2>
-                                <p>Your Order Has Been Completed</p>
-                            </div>
-                            <div class="orderMessage">
-                                
-
-                                <h2>Writer's Message:</h3>
-                                    <div class="writerBox">
-                                        <!-- <div class="oneWriterBox"> -->
-                                        <!-- <input id="writerInputMess" type="text" name=""  placeholder="Order Done!"> -->
-                                        <!-- <textarea id="myTextarea" name="myTextarea" rows="3" cols="28" placeholder="Order Done!"></textarea> -->
-                                        <div class="oneWriterBox downlBox">
-                                            <p>EssayWritingHelp.doc</p>
-                                        </div>
-                                        <!-- </div> -->
-                                        <hr>
-                                        <div class="oneWriterBox downlBox">
-                                            <p>EssayWritingHelp.doc</p>
-                                        </div>
-                                        <hr>
-                                        <div class="oneWriterBox downlBox">
-                                            <p>EssayWritingHelp.doc</p>
-                                        </div>
-                                        <hr>
-                                        <div class="oneWriterBox">
-                                            <button id="writerMarkRevBtn" class="progressBtn">
-                                                Download
-                                                <i class="fa-solid fa-download"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <h2 style="margin-top: 20px;">Your opinion matters to us!</h2>
-                                    <div class="rateStarsProgress">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <!-- <button id="rateusBtn" class="progressBtn rateBTN">Rate Us</button> -->
-
-                            </div>
-                            <button id="markrevisonBtn">Mark Revision</button>
-                        </div>
-
-                        <!-- <div id="rateusSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2>Your opinion matters to us!</h2>
-                                <div class="rateStarsProgress">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- <div id="markrevSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2 style="max-width: 190px;">Your can request a revision within 14 days</h2>
-                                <button id="markrevBtn" class="progressBtn">Mark Revision</button>
-                            </div>
-                        </div> -->
-
-                        <div id="reqRevSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2 style="margin-bottom: 10px;">Requested For Revision</h2>
-                                <div class="reqRevContent">
-                                    <label for="message">Message</label>
-                                    <!-- <input type="text" name="" id="" placeholder="Your Message"> -->
-                                        <textarea id="myTextarea" name="myTextarea" rows="4" cols="28" placeholder="Write your revision Instructions!"></textarea>
-
-                                    <label for="file">File</label>
-                                    <input type="file">
-                                    <label for="file">Deadline Date</label>
-                                    <input type="date">
-                                    <label for="file">Deadline Time</label>
-                                    <input type="time">
-
-                                </div>
-                                <button id="reqRevSubmitBtn" class="progressBtn">Submit</button>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
+                   </div>
                 </div>
-
             </div>
-
-
         </div>
 
-
     </div>
+
 </body>
-<script>
-    $(document).ready(function () {
-        $("#orderproSect").show();
-        $("#congratSect").show();
-        $("#writerSect").hide();
-        // $("#writerSect").hide();
-        $("#rateusSect").hide();
-        $("#markrevSect").hide();
-        $("#reqRevSect").hide();
-
-        $("#AcceptOrderBtn").click(function () {
-            $("#orderproSect").hide();
-            $("#congratSect").hide();
-            $("#writerSect").show();
-        });
-
-        $("#rateusBtn").click(function () {
-            $("#writerSect").hide();
-            $("#rateusSect").show();
-        });
-
-        $("#writerMarkRevBtn").click(function () {
-            $("#writerSect").hide();
-            $("#reqRevSect").show();
-        });
-        $("#submitrevBtn").click(function () {
-            $("#rateusSect").hide();
-            $("#markrevSect").show();
-        });
-        $("#markrevisonBtn").click(function () {
-            $("#writerSect").hide();
-            $("#reqRevSect").show();
-        });
-        $("#reqRevSubmitBtn").click(function () {
-            $("#reqRevSect").hide();
-            // $("#markrevSect").show();
-        });
-    });
-
-    // for rating stars selecting 
-    $(document).ready(function () {
-        $(".rateStarsProgress i").click(function () {
-            // Remove 'selected' class from all stars
-            $(".rateStarsProgress i").removeClass("selected");
-
-            // Add 'selected' class to the clicked star and all previous stars
-            $(this).addClass("selected");
-            $(this).prevAll().addClass("selected");
-        });
-    });
-</script>
 
 </html>

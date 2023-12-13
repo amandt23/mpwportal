@@ -12,10 +12,11 @@ a {
     text-decoration: none;
 }
 
-button,
+button,i,
 svg:hover {
     cursor: pointer;
 }
+
 
 .home {
     display: flex;
@@ -544,7 +545,7 @@ svg:hover {
 
 }
 
-#selectDropdown {
+.selectDropdown {
     border-radius: 5px;
     border: 1px solid #BFBFBF;
     /* padding: 7px 44px; */
@@ -726,6 +727,15 @@ svg:hover {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+.onerightCardContent{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 250px;
+    margin-top: 10px;
+
 }
 
 .cardRightBottom {

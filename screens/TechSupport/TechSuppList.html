@@ -4,13 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="techsupport.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="orderProgres.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -129,249 +124,89 @@
 
         </div>
 
-        <div class="progressOrderContainer">
-            <h1>Order Details</h1>
-            <div class="progresOrderCOntents">
-
-                <div class="orderCompCard">
-                    <h1>Order Details</h1>
-                    <hr>
-                    <div class="orderCompCardDetail">
-                        <div class="orderOne">
-                            <ul>
-                                <li>Email</li>
-                                <li>Order ID</li>
-                                <li>Posted On</li>
-                                <li>Title</li>
-                                <li>Education Level</li>
-                                <li>Document Type</li>
-                                <li>No Of Pages</li>
-                                <li>Course</li>
-                                <li>Source</li>
-                                <li>Citation</li>
-                            </ul>
-                        </div>
-                        <div class="orderOne">
-                            <ul>
-                                <li>Wick@gmail.com</li>
-                                <li>MPW-20</li>
-                                <li>23/12/2023</li>
-                                <li>Testing Document</li>
-                                <li>testing</li>
-                                <li>High School</li>
-                                <li>Reflection Paper</li>
-                                <li>1</li>
-                                <li>Chemistry</li>
-                                <li>2</li>
-                                <li>APA</li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                    <h1>Deadlines Details</h1>
-                    <div class="orderMid">
-                        <ul>
-                            <li>Deadline Date & Time</li>
-                            <li>Timezone</li>
-                        </ul>
-                        <ul>
-                            <li>23/12/2023- 12:45 PM</li>
-                            <li>Mountain Time</li>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="fileStatus">
-                        <h1>File and Status</h1>
-                        <div class="file">
-                            <ul>
-                                <li>File:</li>
-                            </ul>
-                            <ul>
-                                <li>Status:</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="orderInstruction">
-                        <h1>INSTRUCTIONS</h1>
-                        <textarea name="text" id="" cols="30" rows="5"></textarea>
-                    </div>
-
-
-                </div>
-
-                <div class="progressORderRight">
-
-                    <div style="position: sticky; top: 105px;" class="orderProgressCard">
-
-                        <div id="orderproSect" class="changingContent">
-                            <button id="discussBtn">Discuss Any Concerns</button>
-                            <div class="orderMessage">
-                                <p>Your Order is in Progress</p>
-                            </div>
-                        </div>
-
-                        <div id="congratSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2>Congratulations!</h2>
-                                <p>Your Order Has Been Completed</p>
-                                <button id="AcceptOrderBtn" class="progressBtn">Accept Order</button>
-                            </div>
-                        </div>
-
-                        <div id="writerSect" class="changingContent">
-                            <div style="margin-bottom: 50px; padding-bottom: 30px;" class="orderMessage">
-                                <h2>Congratulations!</h2>
-                                <p>Your Order Has Been Completed</p>
-                            </div>
-                            <div class="orderMessage">
-                                
-
-                                <h2>Writer's Message:</h3>
-                                    <div class="writerBox">
-                                        <!-- <div class="oneWriterBox"> -->
-                                        <!-- <input id="writerInputMess" type="text" name=""  placeholder="Order Done!"> -->
-                                        <!-- <textarea id="myTextarea" name="myTextarea" rows="3" cols="28" placeholder="Order Done!"></textarea> -->
-                                        <div class="oneWriterBox downlBox">
-                                            <p>EssayWritingHelp.doc</p>
-                                        </div>
-                                        <!-- </div> -->
-                                        <hr>
-                                        <div class="oneWriterBox downlBox">
-                                            <p>EssayWritingHelp.doc</p>
-                                        </div>
-                                        <hr>
-                                        <div class="oneWriterBox downlBox">
-                                            <p>EssayWritingHelp.doc</p>
-                                        </div>
-                                        <hr>
-                                        <div class="oneWriterBox">
-                                            <button id="writerMarkRevBtn" class="progressBtn">
-                                                Download
-                                                <i class="fa-solid fa-download"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <h2 style="margin-top: 20px;">Your opinion matters to us!</h2>
-                                    <div class="rateStarsProgress">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <!-- <button id="rateusBtn" class="progressBtn rateBTN">Rate Us</button> -->
-
-                            </div>
-                            <button id="markrevisonBtn">Mark Revision</button>
-                        </div>
-
-                        <!-- <div id="rateusSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2>Your opinion matters to us!</h2>
-                                <div class="rateStarsProgress">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- <div id="markrevSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2 style="max-width: 190px;">Your can request a revision within 14 days</h2>
-                                <button id="markrevBtn" class="progressBtn">Mark Revision</button>
-                            </div>
-                        </div> -->
-
-                        <div id="reqRevSect" class="changingContent">
-                            <div class="orderMessage">
-                                <h2 style="margin-bottom: 10px;">Requested For Revision</h2>
-                                <div class="reqRevContent">
-                                    <label for="message">Message</label>
-                                    <!-- <input type="text" name="" id="" placeholder="Your Message"> -->
-                                        <textarea id="myTextarea" name="myTextarea" rows="4" cols="28" placeholder="Write your revision Instructions!"></textarea>
-
-                                    <label for="file">File</label>
-                                    <input type="file">
-                                    <label for="file">Deadline Date</label>
-                                    <input type="date">
-                                    <label for="file">Deadline Time</label>
-                                    <input type="time">
-
-                                </div>
-                                <button id="reqRevSubmitBtn" class="progressBtn">Submit</button>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
+        <div class="techSupportContainer">
+            <div class="techSuppTop">
+                <h1>Technical Support</h1>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="none">
+                        <path d="M8.49996 14.875C13.1416 14.875 17 11.5062 17 7.4375C17 3.37605 13.1333 0 8.49164 0C3.84163 0 0 3.37605 0 7.4375C0 11.5062 3.84998 14.875 8.49996 14.875ZM8.49996 13.6354C4.56664 13.6354 1.42496 10.8792 1.42496 7.4375C1.42496 4.00312 4.55832 1.23959 8.49164 1.23959C12.4166 1.23959 15.5749 4.00312 15.5833 7.4375C15.5917 10.8792 12.425 13.6354 8.49996 13.6354ZM8.47497 10.901C8.92496 10.901 9.19163 10.6312 9.19163 10.2083V8.05001H11.8C12.2666 8.05001 12.5916 7.83852 12.5916 7.45209C12.5916 7.05832 12.2833 6.8323 11.8 6.8323H9.19163V4.54271C9.19163 4.11251 8.92496 3.85002 8.47497 3.85002C8.0333 3.85002 7.79163 4.1271 7.79163 4.54271V6.8323H5.19163C4.69997 6.8323 4.39164 7.05832 4.39164 7.45209C4.39164 7.83852 4.72497 8.05001 5.19163 8.05001H7.79163V10.2083C7.79163 10.6167 8.0333 10.901 8.47497 10.901Z" fill="white"/>
+                      </svg>
+                      New Support Request
+                </button>
 
             </div>
 
+            <!-- table  -->
+            <div class="techListContainer">
+                <h2>My Support Requests</h2>
+                <hr>
+                <div class="techList">
+                    <table>
+                        <tr>
+                          <th>Created Date & Time</th>
+                          <th>Ticket ID</th>
+                          <th>Category</th>
+                          <th>Subject</th>
+                          <th>Status</th>
+                        </tr>
+                        <tr>
+                          <td>26 Sep 2023 16:37 PM</td>
+                          <td>TMF17QZNRX</td>
+                          <td>Technical Inquiry</td>
+                          <td>Hello sir</td>
+                          <td>
+                            <button id="techListBtn1">Resolved</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>26 Sep 2023 16:37 PM</td>
+                          <td>TMF17QZNRX</td>
+                          <td>Technical Inquiry</td>
+                          <td>Hello sir</td>
+                          <td>
+                            <button id="techListBtn2">Replied</button>
+                          </td>
+                        </tr>
+                      
+                          <td>26 Sep 2023 16:37 PM</td>
+                          <td>TMF17QZNRX</td>
+                          <td>Technical Inquiry</td>
+                          <td>Hello sir</td>
+                          <td>
+                            <button id="techListBtn3">Open</button>
+                          </td>
+                        </tr>
+                        
+                       
+                       
+                        
+                        
+                      </table>
+                </div>
+            </div>
 
+            <!-- no support request  -->
+            <section  class="midSect">
+                <div class="placeOrderBtns">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="93" height="93" viewBox="0 0 93 93" fill="none">
+                        <path
+                            d="M24.4105 39.0568C24.4092 38.4151 24.5353 37.7795 24.7817 37.187C25.0282 36.5944 25.3899 36.0567 25.8459 35.6052L40.4873 20.9589C40.9377 20.4926 41.4764 20.1207 42.072 19.8648C42.6676 19.6089 43.3083 19.4742 43.9565 19.4686C44.6048 19.463 45.2476 19.5865 45.8476 19.832C46.4476 20.0775 46.9927 20.44 47.4511 20.8984C47.9095 21.3568 48.272 21.9019 48.5175 22.5018C48.763 23.1018 48.8865 23.7447 48.8809 24.393C48.8752 25.0412 48.7406 25.6818 48.4847 26.2775C48.2288 26.8731 47.8569 27.4118 47.3906 27.8622L41.078 34.1747H70.7905C74.0276 34.1747 77.132 32.8888 79.421 30.5999C81.7099 28.311 82.9958 25.2065 82.9958 21.9695C82.9958 18.7324 81.7099 15.628 79.421 13.339C77.132 11.0501 74.0276 9.76421 70.7905 9.76421C69.4957 9.76421 68.2539 9.24985 67.3384 8.33428C66.4228 7.4187 65.9084 6.17692 65.9084 4.88211C65.9084 3.58729 66.4228 2.34551 67.3384 1.42994C68.2539 0.514363 69.4957 0 70.7905 0C82.903 0 92.76 9.85209 92.76 21.9695C92.76 34.082 82.903 43.9389 70.7905 43.9389H41.078L47.3906 50.2515C48.0789 50.9328 48.5488 51.8037 48.7404 52.753C48.932 53.7024 48.8366 54.6873 48.4664 55.5823C48.0962 56.4772 47.4678 57.2417 46.6615 57.7782C45.8552 58.3148 44.9074 58.5991 43.9389 58.595C43.2982 58.5944 42.6639 58.4673 42.0725 58.221C41.481 57.9747 40.944 57.614 40.4922 57.1597L25.8459 42.5134C25.3903 42.0587 25.0301 41.5176 24.7864 40.9218C24.5391 40.3311 24.4113 39.6972 24.4105 39.0568ZM9.76421 14.6463V68.3495H26.8516C30.6352 68.3495 33.6279 71.5814 36.2545 74.4228L36.7915 75.0087C38.5784 76.9176 41.1171 78.1137 43.9389 78.1137C46.7608 78.1137 49.2995 76.9176 51.0815 75.0038L51.6185 74.4228H51.6234C54.25 71.5814 57.2427 68.3495 61.0263 68.3495H78.1137V58.5853C78.1137 57.2905 78.628 56.0487 79.5436 55.1331C80.4592 54.2175 81.701 53.7032 82.9958 53.7032C84.2906 53.7032 85.5324 54.2175 86.448 55.1331C87.3635 56.0487 87.8779 57.2905 87.8779 58.5853V85.4368C87.8779 87.3791 87.1063 89.2417 85.733 90.6151C84.3596 91.9885 82.497 92.76 80.5547 92.76H7.32316C5.38094 92.76 3.51826 91.9885 2.1449 90.6151C0.771545 89.2417 0 87.3791 0 85.4368V12.2053C0 10.263 0.771545 8.40037 2.1449 7.02701C3.51826 5.65365 5.38094 4.88211 7.32316 4.88211H29.2926C30.5874 4.88211 31.8292 5.39647 32.7448 6.31204C33.6604 7.22761 34.1747 8.4694 34.1747 9.76421C34.1747 11.059 33.6604 12.3008 32.7448 13.2164C31.8292 14.132 30.5874 14.6463 29.2926 14.6463H9.76421Z"
+                            fill="#EFEFEF" />
+                    </svg>
+                    <p>You have no any suppport request</p>
+                    <!-- <div class="new-orderBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="19" viewBox="0 0 21 19" fill="none">
+                            <path
+                                d="M10.5 18.375C16.2338 18.375 21 14.2136 21 9.1875C21 4.17041 16.2235 0 10.4897 0C4.74554 0 0 4.17041 0 9.1875C0 14.2136 4.75586 18.375 10.5 18.375ZM10.5 16.8437C5.64114 16.8437 1.76024 13.439 1.76024 9.1875C1.76024 4.94503 5.63086 1.53126 10.4897 1.53126C15.3382 1.53126 19.2396 4.94503 19.25 9.1875C19.2603 13.439 15.3485 16.8437 10.5 16.8437ZM10.4691 13.466C11.0249 13.466 11.3544 13.1327 11.3544 12.6103V9.94413H14.5764C15.1529 9.94413 15.5544 9.68288 15.5544 9.20552C15.5544 8.7191 15.1735 8.4399 14.5764 8.4399H11.3544V5.61158C11.3544 5.08016 11.0249 4.75591 10.4691 4.75591C9.92349 4.75591 9.62495 5.09818 9.62495 5.61158V8.4399H6.41319C5.80585 8.4399 5.42496 8.7191 5.42496 9.20552C5.42496 9.68288 5.83672 9.94413 6.41319 9.94413H9.62495V12.6103C9.62495 13.1147 9.92349 13.466 10.4691 13.466Z"
+                                fill="white" />
+                        </svg>
+                        <button>Request</button>
+                    </div> -->
+                </div>
+            </section>
         </div>
-
-
     </div>
+
 </body>
-<script>
-    $(document).ready(function () {
-        $("#orderproSect").show();
-        $("#congratSect").show();
-        $("#writerSect").hide();
-        // $("#writerSect").hide();
-        $("#rateusSect").hide();
-        $("#markrevSect").hide();
-        $("#reqRevSect").hide();
-
-        $("#AcceptOrderBtn").click(function () {
-            $("#orderproSect").hide();
-            $("#congratSect").hide();
-            $("#writerSect").show();
-        });
-
-        $("#rateusBtn").click(function () {
-            $("#writerSect").hide();
-            $("#rateusSect").show();
-        });
-
-        $("#writerMarkRevBtn").click(function () {
-            $("#writerSect").hide();
-            $("#reqRevSect").show();
-        });
-        $("#submitrevBtn").click(function () {
-            $("#rateusSect").hide();
-            $("#markrevSect").show();
-        });
-        $("#markrevisonBtn").click(function () {
-            $("#writerSect").hide();
-            $("#reqRevSect").show();
-        });
-        $("#reqRevSubmitBtn").click(function () {
-            $("#reqRevSect").hide();
-            // $("#markrevSect").show();
-        });
-    });
-
-    // for rating stars selecting 
-    $(document).ready(function () {
-        $(".rateStarsProgress i").click(function () {
-            // Remove 'selected' class from all stars
-            $(".rateStarsProgress i").removeClass("selected");
-
-            // Add 'selected' class to the clicked star and all previous stars
-            $(this).addClass("selected");
-            $(this).prevAll().addClass("selected");
-        });
-    });
-</script>
 
 </html>

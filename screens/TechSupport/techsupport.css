@@ -14,6 +14,22 @@
     padding-bottom: 15px;
 
 }
+.techSuppTop{
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+}
+.techSuppTop button {
+    border-radius: 10px;
+    background: #52A81B;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: white;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
 
 .techSupportBox hr {}
 
@@ -66,10 +82,11 @@
     line-height: normal;
 }
 
-.supportBtns{
+.supportBtns {
     margin-top: 20px;
     float: right;
 }
+
 .supportBtns button {
     border-radius: 15px;
     background: #52A81B;
@@ -80,6 +97,53 @@
     width: 81px;
     margin-left: 10px;
 }
-.supportBtns button:hover{
+
+.supportBtns button:hover {
     background: #3C7219;
+}
+
+/* tech support table  */
+
+.techListContainer {
+    width: 850px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border-bottom: 1px solid #D9D9D98A;
+    text-align: left;
+    padding: 10px;
+}
+
+#techListBtn1 {
+    border-radius: 15px;
+    background: #D9D9D9;
+    padding: 6px 10px;
+    border: none;
+}
+
+#techListBtn2 {
+    border-radius: 15px;
+    background: black;
+    padding: 6px 10px;
+    border: none;
+    color: white;
+
+}
+
+#techListBtn3 {
+    border-radius: 15px;
+    background: #FF2E00;
+    padding: 6px 10px;
+    border: none;
+    color: white;
 }

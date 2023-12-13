@@ -1,0 +1,97 @@
+.mainHomeContainer {
+    width: 800px;
+    margin-top: 20px;
+}
+
+.notificationContainer {}
+
+.notificationContainer h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.mainHomeContainer h1 {
+    font-size: 30px;
+}
+
+.notBoxMessageContainer {
+    overflow-y: auto;
+    height: 220px;
+}
+
+.notBox {
+    max-width: 800px;
+    background-color: rgb(180, 164, 164);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 1px solid #6D6D6D;
+    background: #FFF;
+    padding-bottom: 20px;
+
+}
+
+
+.notTop button {
+    border-radius: 5px;
+    background: #52A81B;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+}
+
+.notBox hr {
+    /* width: 662.001px; */
+    height: 1px;
+    margin-top: 3px;
+
+}
+
+.notTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notTop h1 {
+    font-size: 16px;
+}
+
+.oneNot button {
+    border-radius: 5px;
+    background: #52A81B;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+}
+
+.oneNot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 2px;
+    background: #DAF2D4;
+    padding: 13px 7px;
+}
+
+.oneNot p {
+    font-size: 16;
+}
+
+.oneNot h1 {
+    font-size: 16px;
+}
+
+.readNotBox {
+    margin-top: 40px;
+}
+
+.readOneNotBox {
+    background: #F4F4F4;
+
+
+}

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="techsupport.css">
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
-
 <body>
+    
     <div class="home">
-        <!-- side bar  -->
-        <div style="width: 200px;" class="sidebar">
+          <!-- sidebar  -->
+          <div style="width: 200px;" class="sidebar">
             <div class="sidbarTop">
                 <div class="logo">
                     <img src="/assets//images//logo.png" alt="" />
@@ -122,92 +122,47 @@
 
         </div>
 
-        <div class="completeOrder">
+        <div class="techSupportContainer">
+            <h1>Technical Support</h1>
 
-            <p>Complete The Payment Process!</p>
-
-            <div class="completedOrderContents">
-
-            <div class="orderCompCard">
-                <h1>Order Details</h1>
-                <hr>
-                <div class="orderCompCardDetail">
-                    <div class="orderOne">
-                        <ul>
-                            <li>Email</li>
-                            <li>Order ID</li>
-                            <li>Posted On</li>
-                            <li>Title</li>
-                            <li>Education Level</li>
-                            <li>Document Type</li>
-                            <li>No Of Pages</li>
-                            <li>Course</li>
-                            <li>Source</li>
-                            <li>Citation</li>
-                        </ul>
-                    </div>
-                    <div class="orderOne">
-                        <ul>
-                            <li>Wick@gmail.com</li>
-                            <li>MPW-20</li>
-                            <li>23/12/2023</li>
-                            <li>Testing Document</li>
-                            <li>testing</li>
-                            <li>High School</li>
-                            <li>Reflection Paper</li>
-                            <li>1</li>
-                            <li>Chemistry</li>
-                            <li>2</li>
-                            <li>APA</li>
-
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <h1>Deadlines Details</h1>
-                <div class="orderMid">
-                    <ul>
-                        <li>Deadline Date & Time</li>
-                        <li>Timezone</li>
-                    </ul>
-                    <ul>
-                        <li>23/12/2023- 12:45 PM</li>
-                        <li>Mountain Time</li>
-                    </ul>
-                </div>
-                <hr>
-                <div class="fileStatus">
-                    <h1>File and Status</h1>
-                    <div class="file">
-                        <ul><li>File:</li></ul>
-                        <ul><li>Status:</li></ul>
-                    </div>
-                </div>
+            <div class="techSupportBox">
+                <h2>New Support Request</h2>
                 <hr>
 
-                <div class="orderInstruction">
-                    <h1>INSTRUCTIONS</h1>
-                    <textarea name="text" id="" cols="30" rows="5"></textarea>
+                <div class="techInputOne">
+                    <label for="support">Support Category</label>
+                    <select id="techSupport" name="dropdown">
+                        <option value="" disabled selected>Seleect your issue</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <div class="techInputOne">
+                    <label for="Subject">Subject</label>
+                    <input type="text" name="subject" id="">
                 </div>
 
-                
+                <div class="techInputOne">
+                    <label for="Subject">Your Messsage</label>
+                    <!-- <input type="text" name="message"  id="techsuppMess"> -->
+                    <textarea name="message" id="techsuppMess" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="techInputOne">
+                    <label for="Subject">Attaich Files <span>(JPG|JPEG|PNG)</span></label>
+                    <input type="text" placeholder="Include Attachment File" name="subject" id="">
+
+                </div>
+
+                <div class="supportBtns">
+                    <button>Send</button>
+                    <button>Cancel</button>
+                </div>
+
             </div>
-
-            <div class="paymentOption">
-                payment
-            </div>
-
         </div>
-
-        </div>
-
-
-
-
     </div>
 
-
-    </div>
 </body>
-
 </html>

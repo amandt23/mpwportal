@@ -1,0 +1,85 @@
+.techSupportContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.techSupportBox {
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 453px;
+    margin-top: 30px;
+    padding: 5px 23px;
+    padding-bottom: 15px;
+
+}
+
+.techSupportBox hr {}
+
+.techSupportContainer h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.techInputOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.techInputOne label {
+    margin-top: 14px;
+    padding-left: 3px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#techSupport {
+    border-radius: 10px;
+    background: #EFEFEF;
+    padding: 10px 10px;
+}
+
+.techInputOne input {
+    border-radius: 10px;
+    background: #EFEFEF;
+    padding: 10px 15px;
+    border: none;
+}
+
+#techsuppMess {
+    height: 111px;
+    border-radius: 10px;
+    background: #EFEFEF;
+    padding: 10px 10px;
+    border: none;
+}
+
+.techInputOne span {
+    color: #AEAEAE;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.supportBtns{
+    margin-top: 20px;
+    float: right;
+}
+.supportBtns button {
+    border-radius: 15px;
+    background: #52A81B;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    width: 81px;
+    margin-left: 10px;
+}
+.supportBtns button:hover{
+    background: #3C7219;
+}

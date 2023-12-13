@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="notification.css">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="orderProgres.css">
     <title>Document</title>
 </head>
 
 <body>
+
     <div class="home">
         <!-- sidebar  -->
         <div style="width: 200px;" class="sidebar">
@@ -122,125 +123,127 @@
             </div>
 
         </div>
-        
-        <div class="mainHomeContainer">
-            <h1>Notification</h1>
-            <div class="notificationContainer">
-                <h2>Unread Notifications</h2>
-                <div class="notBox">
-                    <div class="notTop">
-                        <h1>Date/Time</h1>
-                        <h1>Order ID</h1>
-                        <h1>Subject</h1>
-                        <button>Mark as Read</button>
+
+        <div class="progressOrderContainer">
+            <h1>Order Details</h1>
+            <div class="progresOrderCOntents">
+
+                <div class="orderCompCard">
+                    <h1>Order Details</h1>
+                    <hr>
+                    <div class="orderCompCardDetail">
+                        <div class="orderOne">
+                            <ul>
+                                <li>Email</li>
+                                <li>Order ID</li>
+                                <li>Posted On</li>
+                                <li>Title</li>
+                                <li>Education Level</li>
+                                <li>Document Type</li>
+                                <li>No Of Pages</li>
+                                <li>Course</li>
+                                <li>Source</li>
+                                <li>Citation</li>
+                            </ul>
+                        </div>
+                        <div class="orderOne">
+                            <ul>
+                                <li>Wick@gmail.com</li>
+                                <li>MPW-20</li>
+                                <li>23/12/2023</li>
+                                <li>Testing Document</li>
+                                <li>testing</li>
+                                <li>High School</li>
+                                <li>Reflection Paper</li>
+                                <li>1</li>
+                                <li>Chemistry</li>
+                                <li>2</li>
+                                <li>APA</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <h1>Deadlines Details</h1>
+                    <div class="orderMid">
+                        <ul>
+                            <li>Deadline Date & Time</li>
+                            <li>Timezone</li>
+                        </ul>
+                        <ul>
+                            <li>23/12/2023- 12:45 PM</li>
+                            <li>Mountain Time</li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="fileStatus">
+                        <h1>File and Status</h1>
+                        <div class="file">
+                            <ul>
+                                <li>File:</li>
+                            </ul>
+                            <ul>
+                                <li>Status:</li>
+                            </ul>
+                        </div>
                     </div>
                     <hr>
 
-                    <div class="notBoxMessageContainer">
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
+                    <div class="orderInstruction">
+                        <h1>INSTRUCTIONS</h1>
+                        <textarea name="text" id="" cols="30" rows="5"></textarea>
                     </div>
+
+
+                </div>
+
+                <div class="progressORderRight">
+
+                    <div class="orderProgressCard">
+                        <button>Discuss Any Concerns</button>
+
+                        <!-- <div class="changingContent">
+                            <div class="orderMessage">
+                                <p>Your Order is in Progress</p>
+                            </div>
+                        </div> -->
+
+                        <div class="changingContent">
+                            <div class="orderMessage">
+                                <h2>Congratulations!</h2>
+                                <p>Your Order Has Been Completed</p>
+                                <button id="AcceptOrderBtn" class="progressBtn">Accept Order</button>
+                            </div>
+                        </div>
+
+                        <div class="changingContent">
+                            <div class="orderMessage">
+                               <h2>Writer's Message:</h3>
+                               <div class="writerBox">
+                                    <div class="oneWriterBox">
+                                        <input type="text" name="" id="" placeholder="Order Done!">
+                                    </div>
+                                    <hr>
+                                    <div class="downloadFile">
+                                        <p>EssayWritingHelp.doc</p>
+
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+
+                    </div>
+
 
                 </div>
 
             </div>
 
-            <!-- read notification  -->
-            <div class="notificationContainer readNotBox">
-                <h2>Read Notifications</h2>
-                <div id="readOneNotBox" class="notBox ">
-
-                    <div class="notTop">
-                        <h1>Date/Time</h1>
-                        <h1>Order ID</h1>
-                        <h1>Subject</h1>
-                        <button>Mark as Read</button>
-                    </div>
-                    <hr>
-
-                    <div class="notBoxMessageContainer">
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
 
         </div>
 
-        
 
     </div>
-
 </body>
 
 </html>

@@ -1,0 +1,93 @@
+.progressOrderContainer {
+    margin-top: 28px;
+}
+
+/* .progressOrderContainer{
+    margin-bottom: 50px;
+} */
+.prgressorder {
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+
+.progresOrderCOntents {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 90px;
+}
+
+.orderProgressCard {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.orderProgressCard button {
+    border-radius: 8px;
+    background: #52A81B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 10px;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.orderMessage {
+    border-radius: 4px;
+    background: #EFEFEF;
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+
+}
+
+.orderMessage h2 {
+    font-size: 18px;
+}
+
+.orderMessage .progressBtn {
+    border-radius: 8px;
+    background: #52A81B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px 7px;
+    color: white;
+    border: none;
+    max-width: 120px;
+}
+
+.writerBox {
+    border-radius: 4px;
+    border: 1px solid #BFBFBF;
+    padding: 9px;
+    width: 231px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.writerBox input {
+    border-radius: 3px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 5px 7px;
+    width: 100%;
+}
+
+.writerBox hr {
+    width: 231px;
+    height: 1px;
+}
+
+.downloadFile p {
+    color: #515151;
+    font-size: 12px;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: normal;
+}

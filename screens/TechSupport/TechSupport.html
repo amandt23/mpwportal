@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="notification.css">
+    <link rel="stylesheet" href="techsupport.css">
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
-
 <body>
+    
     <div class="home">
-        <!-- sidebar  -->
-        <div style="width: 200px;" class="sidebar">
+          <!-- sidebar  -->
+          <div style="width: 200px;" class="sidebar">
             <div class="sidbarTop">
                 <div class="logo">
                     <img src="/assets//images//logo.png" alt="" />
@@ -122,125 +121,48 @@
             </div>
 
         </div>
-        
-        <div class="mainHomeContainer">
-            <h1>Notification</h1>
-            <div class="notificationContainer">
-                <h2>Unread Notifications</h2>
-                <div class="notBox">
-                    <div class="notTop">
-                        <h1>Date/Time</h1>
-                        <h1>Order ID</h1>
-                        <h1>Subject</h1>
-                        <button>Mark as Read</button>
-                    </div>
-                    <hr>
 
-                    <div class="notBoxMessageContainer">
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                    </div>
+        <div class="techSupportContainer">
+            <h1>Technical Support</h1>
+
+            <div class="techSupportBox">
+                <h2>New Support Request</h2>
+                <hr>
+
+                <div class="techInputOne">
+                    <label for="support">Support Category</label>
+                    <select id="techSupport" name="dropdown">
+                        <option value="" disabled selected>Seleect your issue</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <div class="techInputOne">
+                    <label for="Subject">Subject</label>
+                    <input type="text" name="subject" id="">
+                </div>
+
+                <div class="techInputOne">
+                    <label for="Subject">Your Messsage</label>
+                    <!-- <input type="text" name="message"  id="techsuppMess"> -->
+                    <textarea name="message" id="techsuppMess" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="techInputOne">
+                    <label for="Subject">Attaich Files <span>(JPG|JPEG|PNG)</span></label>
+                    <input type="text" placeholder="Include Attachment File" name="subject" id="">
 
                 </div>
 
-            </div>
-
-            <!-- read notification  -->
-            <div class="notificationContainer readNotBox">
-                <h2>Read Notifications</h2>
-                <div id="readOneNotBox" class="notBox ">
-
-                    <div class="notTop">
-                        <h1>Date/Time</h1>
-                        <h1>Order ID</h1>
-                        <h1>Subject</h1>
-                        <button>Mark as Read</button>
-                    </div>
-                    <hr>
-
-                    <div class="notBoxMessageContainer">
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                        <div class="oneNot readOneNotBox">
-                            <p>12/10/2023 - 23:46:00</p>
-                            <h1>MPW-108</h1>
-                            <p>Your order has been placed.</p>
-                            <button>Mark As Read</button>
-                        </div>
-                    </div>
-
+                <div class="supportBtns">
+                    <button>Send</button>
+                    <button>Cancel</button>
                 </div>
 
             </div>
-
         </div>
-
-        
-
     </div>
 
 </body>
-
 </html>

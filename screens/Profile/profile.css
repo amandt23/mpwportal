@@ -1,0 +1,157 @@
+.homeContainer {
+    margin-top: 28px;
+    flex: 1;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 5px 5px 0px;
+    margin-bottom: 40px;
+}
+
+.homeContainer h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.myProfileCard {
+    display: flex;
+    margin-top: 20px;
+    column-gap: 30px;
+    border-radius: 0px 5px 5px 0px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.profileLeft {
+    background: #489E10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileLeft h2 {
+    font-size: 18px;
+}
+
+.profileLeft hr {
+    width: 100%;
+}
+
+.profileTOp {
+    text-align: center;
+    padding: 15px 56px;
+
+}
+
+.profileBottom {
+    text-align: center;
+    padding: 15px 56px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.profileBottom h2{
+    color: white;
+}
+.profileBottom h2:hover{
+   cursor: pointer;
+}
+
+
+.profileRight {
+    display: flex;
+    flex-direction: column;
+    width: 515px;
+    align-items: center;
+
+
+}
+
+.profileRight h2 {
+    margin-bottom: 20px;
+}
+
+.profileOne {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profileRight {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.profileRight hr {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.profileOne ul li:last-child {
+    padding-right: 100px
+}
+
+.profileOne ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.profileOne ul li {
+    list-style: none;
+    display: flex;
+
+}
+
+/* setting page  */
+.profileInputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 30px;
+
+}
+
+.profileRightSetting {
+    /* width: 470px; */
+}
+
+.profileInputs label {
+    padding-left: 5px;
+}
+
+.profileInputs input {
+    border-radius: 10px;
+    background: #E1E7EA;
+    padding: 10px;
+    /* width: 100%; */
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 13px;
+
+}
+
+.settingBtns{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    width: 100%;
+}
+.settingBtns button {
+    border-radius: 15px;
+    background: #52A81B;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    padding: 7px 12px;
+    color: white;
+    border: none;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(5, 108, 5);
+}

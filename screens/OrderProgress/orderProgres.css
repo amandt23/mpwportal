@@ -14,6 +14,7 @@
     margin-top: 40px;
     display: flex;
     column-gap: 90px;
+    margin-bottom: 20px;
 }
 
 .orderProgressCard {
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    width: 350px;
 }
 
 .orderProgressCard button {
@@ -49,26 +51,56 @@
 }
 
 .orderMessage h2 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .orderMessage .progressBtn {
     border-radius: 8px;
     background: #52A81B;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 5px 7px;
+    padding: 6px 7px;
     color: white;
     border: none;
-    max-width: 120px;
+    font-size: 14px;
+    max-width: 140px;
+    display: flex;
+    column-gap: 10px;
 }
-
+.changingContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#discussBtn{
+    margin-bottom: 30px;
+}
+#markrevisonBtn{
+    margin-top: 40px;
+    background-color: #FF0000;
+}
 .writerBox {
     border-radius: 4px;
     border: 1px solid #BFBFBF;
-    padding: 9px;
+    /* padding: 9px; */
     width: 231px;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneWriterBox {
+    padding: 6px;
+}
+
+#myTextarea{
+    border-radius: 3px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 5px 7px;
+    width: 100%;
+    resize: none;
+    border: none;
 }
 
 .writerBox input {
@@ -85,9 +117,68 @@
 }
 
 .downloadFile p {
-    color: #515151;
+    color: hsl(0, 0%, 32%);
     font-size: 12px;
     font-style: normal;
     /* font-weight: 600; */
     line-height: normal;
+}
+
+.downlBox {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.downlBox:hover {
+    cursor: pointer;
+}
+
+.oneWriterBox p {
+    color: hsl(0, 0%, 32%);
+    font-size: 13px;
+    font-style: normal;
+    /* font-weight: 600; */
+    line-height: normal;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 3px 8px;
+}
+
+.rateBTN {
+    margin-top: 20px;
+}
+
+.rateStarsProgress {
+    display: flex;
+    column-gap: 5px;
+}
+
+.rateStarsProgress i {
+    color: #a1a1a1;
+}
+
+.rateStarsProgress i.selected {
+    color: #4CAF50;
+    /* Green */
+}
+
+.reqRevContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+}
+
+.reqRevContent label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.reqRevContent input {
+    border-radius: 4px;
+    border: 1px solid #EFEFEF;
+    background: #FFF;
+    padding: 9px 10px;
+    width: 218px;
 }
